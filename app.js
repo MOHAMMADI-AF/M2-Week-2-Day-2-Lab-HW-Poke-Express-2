@@ -61,6 +61,7 @@ app.get("/pokemon/:indexOfPokesArray", function (req, res) {
 
 //TESTING SERVER
 //==============
-app.listen(port, () => {
-  console.log(`Server listening on http://localhost:${port}/pokemon`);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server listening on http://localhost:${PORT}/pokemon`);
 });
