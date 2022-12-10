@@ -62,5 +62,5 @@ app.get("/pokemon/:indexOfPokesArray", function (req, res) {
 //TESTING SERVER
 //==============
 app.listen(port, () => {
-  console.log("listening");
+  console.log(`Server listening on http://localhost:${port}/pokemon`);
 });
