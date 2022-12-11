@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 const Pokemon = require("./models/pokemon.js");
 
 //MIDDLEWARE
@@ -61,7 +61,7 @@ app.get("/pokemon/:indexOfPokesArray", function (req, res) {
 
 //TESTING SERVER
 //==============
-const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}/pokemon`);
 });
