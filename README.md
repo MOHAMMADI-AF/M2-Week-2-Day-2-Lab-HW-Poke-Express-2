@@ -21,3 +21,5 @@ npm i -g nodemon (if you have already installed, no need to install again)
 npm install express-react-views react react-dom --save
 
 npm i mongoose dotenv
+
+npm i method-override
