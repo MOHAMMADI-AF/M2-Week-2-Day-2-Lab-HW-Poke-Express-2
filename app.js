@@ -31,6 +31,14 @@ mongoose.connection.once("open", () => {
 
 // ROUTES
 //=======
+app.get("/", (req, res) => {
+  Pokemon.find({}, (error, allPokes) => {
+    res.render("Home", {
+      pokes: allPokes, // getting all fruis from db to pass as props
+    });
+  });
+});
+
 app.get("/pokemon", (req, res) => {
   Pokemon.find({}, (error, allPokes) => {
     res.render("Index", {

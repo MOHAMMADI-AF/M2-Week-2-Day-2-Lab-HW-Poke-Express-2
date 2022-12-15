@@ -9,17 +9,14 @@ class Show extends React.Component {
   render() {
     const { pokemon } = this.props;
     return (
-      <DefaultLayout title={"Edit Page"}>
+      <DefaultLayout title={""}>
         <div align="center">
-          <h1>Pokemon show page</h1>
-          <h3>This is {this.props.pokemon.name}</h3>
-          <nav>
-            <img style={imageSize} src={pokemon.image}></img>
+          <br></br>
+          <h1>Welcome to Pokemon Page</h1>
+          <h3>
             <br></br>
-            <h3>
-              <a href="/pokemon/">Return to index</a>
-            </h3>
-          </nav>
+            <a href="/pokemon/">Go To Index Page</a>
+          </h3>
         </div>
       </DefaultLayout>
     );
